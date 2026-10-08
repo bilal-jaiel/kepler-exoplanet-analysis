@@ -78,7 +78,7 @@ The correspondence analysis between size class and disposition has a total inert
 
 | Size class | Confirmed | Candidate | False positive |
 |---|---:|---:|---:|
-| Earth (< 1.25 R⊕) | 18.9 % | 33.9 % | 47.2 % |
+| Earth (≤ 1.25 R⊕) | 18.9 % | 33.9 % | 47.2 % |
 | Super-Earth (1.25-2 R⊕) | 42.6 % | 30.1 % | 27.4 % |
 | Neptune (2-6 R⊕) | 53.1 % | 24.3 % | 22.6 % |
 | Jupiter (6-15 R⊕) | 29.7 % | 23.2 % | 47.1 % |
