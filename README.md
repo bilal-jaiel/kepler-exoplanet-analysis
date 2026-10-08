@@ -107,8 +107,8 @@ Silhouette scores of 0.2 to 0.3 mean overlapping groups: the catalogue forms con
 ## Getting started
 
 ```bash
-git clone https://github.com/bilal-jaiel/AI-exoplanet-prediction.git
-cd AI-exoplanet-prediction
+git clone https://github.com/bilal-jaiel/kepler-exoplanet-analysis.git
+cd kepler-exoplanet-analysis
 pip install -r requirements.txt
 jupyter notebook notebooks/
 ```
