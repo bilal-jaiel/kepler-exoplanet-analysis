@@ -88,7 +88,7 @@ Giant objects are almost always eclipsing binaries mimicking a planet, while sup
 
 ### Planet and star variables are strongly linked, once a leakage is removed
 
-A first canonical correlation analysis gave a suspicious correlation of 0.978: the planet's equilibrium temperature is computed from stellar quantities. Once that variable is removed, the canonical correlations are 0.759, 0.236 and 0.166, all three significant at the 1 % level (Bartlett test). The first dimension ties planet radius, stellar radius and transit depth together, which is the geometry of a transit.
+A first canonical correlation analysis gave a suspicious correlation of 0.978: the planet's equilibrium temperature is computed from stellar quantities. Once that variable is removed, the canonical correlations are 0.759, 0.236 and 0.166, all three significant at the 1 % level (Bartlett test). The canonical weights of the first dimension tie planet radius, stellar radius and transit depth together, which is the geometry of a transit.
 
 ### The catalogue has weak cluster structure
 
@@ -97,12 +97,14 @@ Clustering on 19 log-transformed, standardised variables:
 | Algorithm | Clusters | Silhouette | Outcome |
 |---|---|---:|---|
 | DBSCAN | 1 + noise | n/a | Fails: 99.4 % of points in one cluster |
-| HDBSCAN | 3 + noise | 0.362 | Rejected: 3,519 objects (44 %) labelled as noise |
-| k-means | 5 | 0.224 | Spherical clusters do not fit the data |
-| Ward hierarchical | 5 | 0.217 | Used to choose k = 5 |
-| Spectral clustering | 5 | 0.294 | Retained: best score while assigning every object |
+| HDBSCAN | 3 + noise | 0.362 ¹ | Rejected: 3,519 objects (44 %) labelled as noise |
+| k-means | 5 | 0.224 | Highest score over all objects |
+| Ward hierarchical | 5 | 0.203 | Used to choose k = 5 |
+| Spectral clustering | 5 | 0.198 | Retained in the notebook for its graph-based view, not for its score |
 
-Silhouette scores of 0.2 to 0.3 mean overlapping groups: the catalogue forms continuous populations rather than well-separated clusters, which is consistent with the physics.
+<sub>Silhouette scores computed on the same 7,994 objects (verification cell after spectral clustering in notebook 03). ¹ HDBSCAN is scored on its 4,475 non-noise points only. The notebook first compared Ward (0.217) and spectral (0.294) on that subset too, which flattered them; the fair comparison was added afterwards.</sub>
+
+Silhouette scores around 0.2 mean overlapping groups: the catalogue forms continuous populations rather than well-separated clusters, which is consistent with the physics.
 
 ## Getting started
 
