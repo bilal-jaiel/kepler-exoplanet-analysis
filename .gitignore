@@ -1,0 +1,23 @@
+# Generated outputs
+output/
+
+# Jupyter / Python
+.ipynb_checkpoints/
+__pycache__/
+*.py[cod]
+.venv/
+
+# LaTeX build files
+*.aux
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
