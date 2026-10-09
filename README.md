@@ -86,6 +86,8 @@ The correspondence analysis between size class and disposition has a total inert
 
 Giant objects are almost always eclipsing binaries mimicking a planet, while super-Earths and Neptune-sized objects make up most confirmed planets.
 
+<p align="center"><img src="docs/figures/period_radius.png" width="95%" alt="Orbital period against planet radius for each disposition"></p>
+
 ### Planet and star variables are strongly linked, once a leakage is removed
 
 A first canonical correlation analysis gave a suspicious correlation of 0.978: the planet's equilibrium temperature is computed from stellar quantities. Once that variable is removed, the canonical correlations are 0.759, 0.236 and 0.166, all three significant at the 1 % level (Bartlett test). The canonical weights of the first dimension tie planet radius, stellar radius and transit depth together, which is the geometry of a transit.
